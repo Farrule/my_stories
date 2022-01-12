@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_stories/screens/home.dart';
-import 'package:my_stories/components/input_form.dart';
+import 'package:my_stories/components/widgets/sign_in.dart';
+import 'package:my_stories/screens/welcome/sign_in_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
@@ -14,7 +15,8 @@ class WelcomeScreen extends StatelessWidget {
           Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
-              image: AssetImage('assets/images/welcome_pink.jpg'),
+              image:
+                  AssetImage('lib/components/assets/images/welcome_pink.jpg'),
               fit: BoxFit.cover,
             )),
           ),
@@ -32,7 +34,6 @@ class WelcomeScreen extends StatelessWidget {
                             color: Colors.pink[400],
                           ))),
                   Spacer(),
-                  InputForm(formKey: _formKey),
                   Spacer(),
                   SizedBox(
                       width: double.infinity,
@@ -45,7 +46,7 @@ class WelcomeScreen extends StatelessWidget {
                         onPressed: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomeScreen())),
+                                builder: (context) => SignInScreen())),
                         style: TextButton.styleFrom(
                           padding: EdgeInsets.symmetric(vertical: 14),
                           backgroundColor: Colors.pink[400],

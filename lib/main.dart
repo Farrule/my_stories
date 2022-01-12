@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // * theme file
-import 'package:my_stories/theme.dart';
+import 'package:my_stories/model/constructors/constructor.dart';
 // * route files
 import 'package:my_stories/screens/home.dart';
 import 'package:my_stories/screens/welcome/welcome_screen.dart';
